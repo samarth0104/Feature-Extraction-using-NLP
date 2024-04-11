@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# G2_PS_2 Solution Readme Team Prisase
+# Problem Statement
+G2_PS_2 aims to address the challenge of analyzing customer reviews from G2 Marketing solutions and extracting the feature sets that customers are looking for. With over 2.5 million reviews, identifying key features from this data can significantly benefit buyers and software vendors in decision-making processes.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Solution Overview
+# Data Collection and Preprocessing
+Utilized the G2 API to fetch reviews of G2 Marketing solutions in batches of 100.
+Stored the fetched data into a CSV file named survey_responses.csv.
+Preprocessed the data:
+Extracted relevant columns: id, hate, love. (As a Dataframe)
+Removed stopwords, punctuation, and special characters from the hate column. (using nltk module and then the result is stored in an intermediate csv file)
+Filtered out positive sentiments from the hate column to focus on areas of improvement or customer issues. (using textblob we have done sentimental analysis)
+# Feature Extraction
+Identified the most common adjective from the love column and stored it in a love_key.csv file.(for keyword searches)
+Conducted part-of-speech(POS) tagging to extract singular and plural nouns.
+We extract the Hyphenated Adjective-Noun, Verb-Noun, Noun-Noun Compound, Proper Noun followed by a common noun, Proper Noun followed by a common noun, Adjective-Noun Pairing.
+Performed two-word feature extraction for better understanding.()
+Pruned irrelevant features and nouns.
+Categorized extracted features into 8 different categories: ROI, Social, Information, Affordability, Pages, Needs, Security, Technical.
+Extracted top features and stored them in result.csv.
+# User Interface
+Developed a user-friendly React application named g2_ps_2.
+# Components:
+Feature.js: Displays top features of each category and associated reviews for better understanding.
+Review.js: Shows the first 3 top-rated reviews of G2 Marketing Solutions with a nice UI.
+PieChart.js: Generates a pie chart representing the percentage of positive, neutral, and negative reviews.
+Statistics.js: Gives a Rating Bar and allows searching for reviews based on keywords and also has 10 inbuilt keyword buttons(which are adjectives).
+App.js: Main page that handles all components.
+# Dependencies
+Utilized various Python libraries including Pandas, NLTK, Ast, TextBlob, Itertools, and Re.
+All the csv files are read using  PapaParse and Fetch method  in the React application.
+# How to Run
+Few dependencies to be installed before running:
+npm install papaparse
+npm install @mui/material @emotion/react @emotion/styled
 
-## Available Scripts
+Update the paths for loading components in Feature.js and Review.js to match your local directory.
+The below 3 paths have to be changed:
+Feature.js:
+import Data from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/csv_files/result.csv';
+import SurveyData from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/csv_files//survey_responses.csv'
+Review.js:
+import anonImage from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/images/anon.jpg'; 
+Make sure the paths are correct.
+Navigate to the g2_ps_2 directory using the command cd g2_ps_2.
+Run the React application using npm start.
+# Note
+Ensure all dependencies are installed and paths are correctly configured before running the code.
+There are two sets of codes saved in two different way one is the g2_v3.ipynb and the second is the folder python_code. 
+Both the things have same code and python_code has some extra codes for formatting or rearranging the csv files. 
+The css of the React App might change because of laptop screen size (requires 15.6inch laptop for proper css). 
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
