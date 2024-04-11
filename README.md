@@ -37,8 +37,8 @@ _
 - All the csv files are read using  PapaParse and Fetch method  in the React application.
 # How to Run
 - Few dependencies to be installed before running:
-**npm install papaparse**
-**npm install @mui/material @emotion/react @emotion/styled**
+  - **npm install papaparse**
+  - **npm install @mui/material @emotion/react @emotion/styled**
 
 - Update the paths for loading components in Feature.js and Review.js to match your local directory.
 - The below 3 paths have to be changed:
