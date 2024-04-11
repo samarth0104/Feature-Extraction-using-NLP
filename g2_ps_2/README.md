@@ -14,7 +14,7 @@ G2_PS_2 aims to address the challenge of analyzing customer reviews from G2 Mark
 - Identified the most common adjective from the love column and stored it in a love_key.csv file.(for keyword searches)
 - Conducted part-of-speech(POS) tagging to extract singular and plural nouns.
 - We extract the Hyphenated Adjective-Noun, Verb-Noun, Noun-Noun Compound, Proper Noun followed by a common noun, Proper Noun followed by a common noun, Adjective-Noun Pairing.
-- Performed two-word feature extraction for better understanding.()
+- Performed two-word feature extraction for better understanding.
 - Pruned irrelevant features and nouns.
 - Categorized extracted features into 8 different categories: ROI, Social, Information, Affordability, Pages, Needs, Security, Technical.
 - Extracted top features and stored them in result.csv.
@@ -37,16 +37,16 @@ G2_PS_2 aims to address the challenge of analyzing customer reviews from G2 Mark
 - Update the paths for loading components in Feature.js and Review.js to match your local directory.
 - The below 3 paths have to be changed:
 - Feature.js:
-**import Data from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/csv_files/result.csv';**
-**import SurveyData from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/csv_files//survey_responses.csv'**
+  - **import Data from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/csv_files/result.csv';**
+  - **import SurveyData from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/csv_files//survey_responses.csv'**
 - Review.js:
-**import anonImage from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/images/anon.jpg'**
+  - **import anonImage from 'C:/Users/samar/OneDrive/Desktop/PESU/Extra/G2/g2_ps_2/src/images/anon.jpg'**
 - Make sure the paths are correct.
 - Navigate to the g2_ps_2 directory using the command **cd g2_ps_2**.
 - Run the React application using **npm start**.
 # Note
-Ensure all dependencies are installed and paths are correctly configured before running the code.
-There are two sets of codes saved in two different way one is the **g2_v3.ipynb** and the second is the folder **python_codes**. 
-Both the things have same code and python_code has some extra codes for formatting or rearranging the csv files. 
-The css of the React App might change because of **laptop screen size** (**requires 15.6inch laptop for proper css**). 
+- Ensure all dependencies are installed and paths are correctly configured before running the code.
+- There are two sets of codes saved in two different way one is the **g2_v3.ipynb** and the second is the folder **python_codes**. 
+- Both the things have same code and python_code has some extra codes for formatting or rearranging the csv files. 
+- The css of the React App might change because of **laptop screen size** (**requires 15.6inch laptop for proper css**). 
 
