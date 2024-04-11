@@ -20,11 +20,11 @@ G2_PS_2 aims to address the challenge of analyzing customer reviews from G2 Mark
 - Extracted top features and stored them in result.csv.
 # User Interface
 - Developed a user-friendly React application named **g2_ps_2**.
-- ![image](https://github.com/samarth0104/G2_Prisase/assets/144517774/8ac54b67-00f2-46eb-b6d1-e0efe2b38dd0)
-  <br />
-- ![image](https://github.com/samarth0104/G2_Prisase/assets/144517774/b97062df-2ae3-46e8-8fd4-f727dd5c0bde)
-- <br />
-- ![image](https://github.com/samarth0104/G2_Prisase/assets/144517774/803f3885-8101-49a7-a1fa-2aebaf4370a9)
+ ![image](https://github.com/samarth0104/G2_Prisase/assets/144517774/8ac54b67-00f2-46eb-b6d1-e0efe2b38dd0)
+_
+ ![image](https://github.com/samarth0104/G2_Prisase/assets/144517774/b97062df-2ae3-46e8-8fd4-f727dd5c0bde)
+_
+ ![image](https://github.com/samarth0104/G2_Prisase/assets/144517774/803f3885-8101-49a7-a1fa-2aebaf4370a9)
 # Components:
 - Feature.js: Displays top features of each category and associated reviews for better understanding.
 - Review.js: Shows the first 3 top-rated reviews of G2 Marketing Solutions with a nice UI.
