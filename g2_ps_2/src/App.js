@@ -30,6 +30,7 @@ function App() {
       }
     };
     fetchData();
+    document.title = "G2 Marketing Solutions";
   }, []);
 
   // Function to chunk the array into groups of size n
