@@ -33,7 +33,7 @@ _
 - **Statistics.js**: Gives a Rating Bar and allows searching for reviews based on keywords and also has 10 inbuilt keyword buttons(which are adjectives).
 - **App.js**: Main page that handles all components.
 # Dependencies
-- Utilized various Python libraries including Pandas, NLTK, Ast, TextBlob, Itertools, and Re.
+- Utilized various Python libraries including requests, csv, pandas, nltk, ast, textblob, itertools, re, spacy, collections, vaderSentiment.vaderSentiment, transformers, sklearn. 
 - All the csv files are read using  PapaParse and Fetch method  in the React application.
 # How to Run
 - Update the paths for loading components in Feature.js and Review.js to match your local directory.
