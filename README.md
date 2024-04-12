@@ -1,4 +1,4 @@
-# G2_PS_2 Solution Readme Team Prisase
+# G2_PS_2 Solution Team Prisase
 
 # Problem Statement
 G2_PS_2 aims to address the challenge of analyzing customer reviews from G2 Marketing solutions and extracting the feature sets that customers are looking for. With over 2.5 million reviews, identifying key features from this data can significantly benefit buyers and software vendors in decision-making processes.
