@@ -52,7 +52,7 @@ _
 - Run the React application using **npm start**.
 # Note
 - Ensure all dependencies are installed and paths are correctly configured before running the code.
-- There are two sets of codes saved in two different way one is the **g2_v3.ipynb** and the second is the folder **python_codes**. 
+- There are two sets of codes saved in two different way, one is the **g2_v3.ipynb** and the second is the folder **python_codes**. 
 - Both the things have same code and python_code has some extra codes for formatting or rearranging the csv files. 
 - The css of the React App might change because of **laptop screen size** because we have used the **"px"** instead of **"%"** for all the dimensions of div box(**requires 15.6inch laptop for proper css**). 
 
