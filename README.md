@@ -16,9 +16,9 @@ G2_PS_2 aims to address the challenge of analyzing customer reviews from G2 Mark
 - Conducted **part-of-speech(POS)** tagging to extract singular and plural nouns.
 - We extract the **Hyphenated Adjective-Noun, Verb-Noun, Noun-Noun Compound, Proper Noun followed by a common noun, Proper Noun followed by a common noun, Adjective-Noun Pairing**.
 - Performed two-word feature extraction for better understanding.
-- Pruned irrelevant features and nouns.
+- Pruned irrelevant features and nouns. Using filter function.
 - Categorized extracted features into 8 different categories: **ROI, Social, Information, Affordability, Pages, Needs, Security, Technical**.
-- Extracted top features and stored them in result.csv.
+- Extracted top features and stored them in result.csv. For each category, it counts the occurrence of each feature, sorts them based on their frequencies.
 # User Interface
 - Developed a user-friendly React application named **g2_ps_2**.
  ![image](https://github.com/samarth0104/G2_Prisase/assets/144517774/8ac54b67-00f2-46eb-b6d1-e0efe2b38dd0)
